@@ -140,18 +140,26 @@ void Input() {
 		switch (_getch()) {
 		case 'a':
 		case 'A':
+		case 'h':
+		case 'H':
 			if (dir != RIGHT) dir = LEFT;
 			break;
 		case 'd':
 		case 'D':
+		case 'l':
+		case 'L':
 			if (dir != LEFT) dir = RIGHT;
 			break;
 		case 'w':
 		case 'W':
+		case 'k':
+		case 'K':
 			if (dir != DOWN) dir = UP;
 			break;
 		case 's':
 		case 'S':
+		case 'j':
+		case 'J':
 			if (dir != UP) dir = DOWN;
 			break;
 		case 'x':
