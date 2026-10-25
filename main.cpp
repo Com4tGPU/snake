@@ -132,7 +132,7 @@ void Draw() {
 
 	// Display Stats
 	cout << "Score: " << score << endl;
-	cout << "Controls: W (Up), A (Left), S (Down), D (Right) | X to Quit" << endl;
+	cout << "Controls: W or K (Up), A or H (Left), S or J (Down), D or L (Right) | X to Quit" << endl;
 }
 
 void Input() {
