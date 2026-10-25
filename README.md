@@ -1,7 +1,8 @@
 # snake
 
 simple snake.
-WASD to move.
+
+WASD or vim-keys to move.
 X to exit
 
 ## release information
