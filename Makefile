@@ -2,17 +2,20 @@
 ifeq '$(findstring ;,$(PATH))' ';'
     RM :=      del /f /q
     EXE_EXT := .exe
+    DIR_SEP := \\
 else
     RM :=      rm -f
     EXE_EXT := 
+    DIR_SEP := /
 endif
 
 CXX ?= c++
+TARGET = snake
 
-main$(EXE_EXT): main.cpp
-	$(CXX) -Wall -Wextra main.cpp -o main
+$(TARGET)$(EXE_EXT): src$(DIR_SEP)main.cpp
+	$(CXX) -Wall -Wextra src$(DIR_SEP)main.cpp -o $(TARGET)$(EXE_EXT)
 
 clean:
-	$(RM) main$(EXE_EXT)
+	$(RM) $(TARGET)$(EXE_EXT)
 
 .PHONY: clean
