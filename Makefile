@@ -10,11 +10,12 @@ else
 endif
 
 CXX ?= c++
+TARGET = snake
 
-main$(EXE_EXT): src$(DIR_SEP)main.cpp
-	$(CXX) -Wall -Wextra src$(DIR_SEP)main.cpp -o main
+$(TARGET)$(EXE_EXT): src$(DIR_SEP)main.cpp
+	$(CXX) -Wall -Wextra src$(DIR_SEP)main.cpp -o $(TARGET)$(EXE_EXT)
 
 clean:
-	$(RM) main$(EXE_EXT)
+	$(RM) $(TARGET)$(EXE_EXT)
 
 .PHONY: clean
