@@ -13,5 +13,6 @@ pre-release v0.1.1 beta.
 
 to compile the program, run 'make'.
 
-check out latest release for executable.
+check out latest release for executable.  
 
+![snake screenshot](screenshots/snake.png "screenshot of snake")
