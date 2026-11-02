@@ -227,7 +227,13 @@ void Logic() {
 	}
 }
 
-int main() {
+int main(int argc, char *argv[]) {
+	// check arguments. if any, print usage because the program doesn't even need any arguments twin
+	if(argc > 1) {
+		cerr << "usage: " << argv[0] << endl;
+		return -1;
+	}
+	
 	Setup();
 
 	// Main Game Loop
