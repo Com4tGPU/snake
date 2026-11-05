@@ -5,6 +5,10 @@ simple snake.
 WASD or vim-keys to move.
 X to exit
 
+## usage
+
+usage: snake
+
 ## release information
 latest release is:
 pre-release v0.1.1 beta.
